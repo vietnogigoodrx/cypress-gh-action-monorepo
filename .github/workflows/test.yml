@@ -10,7 +10,6 @@ jobs:
         with:
           # just perform installl
           runTests: false
-      - run: yarn lint
       - name: Run e2e tests
         uses: cypress-io/github-action@v1
         with:
