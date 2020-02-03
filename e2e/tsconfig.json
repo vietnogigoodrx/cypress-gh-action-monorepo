@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "types": ["cypress", "@types/testing-library__cypress", "node"]
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

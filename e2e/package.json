@@ -1,24 +1,22 @@
 {
-  "name": "cypress-gh-action-monorepo",
-  "version": "1.0.0",
-  "description": "Example running Cypress e2e tests using GitHub Action inside a monorepo",
-  "main": "index.js",
+  "name": "web-app-testing",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "prettier --write 'e2e/**/*.js'"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:ci": "cypress run -c './cypress.ci.json'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bahmutov/cypress-gh-action-monorepo.git"
-  },
-  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bahmutov/cypress-gh-action-monorepo/issues"
-  },
-  "homepage": "https://github.com/bahmutov/cypress-gh-action-monorepo#readme",
   "devDependencies": {
-    "cypress": "3.8.3",
-    "prettier": "1.19.1"
+    "@cypress/webpack-preprocessor": "^4.1.1",
+    "@testing-library/cypress": "^5.0.2",
+    "@testing-library/react": "^9.3.2",
+    "@types/faker": "^4.1.9",
+    "cypress": "^3.8.2",
+    "eslint-plugin-cypress": "^2.7.0",
+    "faker": "^4.1.0",
+    "js-cookie": "^2.2.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5"
   }
 }

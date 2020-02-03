@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:8888",
+  "apiUrl": "https://api.heydoctor.xyz",
+  "integrationFolder": "cypress/e2e",
+  "ignoreTestFiles": "**/*/__tests__/**/*",
+  "video": false
+}
