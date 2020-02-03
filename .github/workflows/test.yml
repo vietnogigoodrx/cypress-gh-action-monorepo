@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Install dependencies
-        uses: cypress-io/github-action@v1
-        with:
-          # just perform installl
-          runTests: false
+      # - name: Install dependencies
+      #   uses: cypress-io/github-action@v1
+      #   with:
+      #     # just perform installl
+      #     runTests: false
       - name: Run e2e tests
         uses: cypress-io/github-action@v1
         with:
